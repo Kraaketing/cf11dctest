@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: contact
-permalink: /contact
+permalink: /contact.html
 ---
 
 Form goes here
