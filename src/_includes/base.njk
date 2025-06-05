@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <header><nav><a href="/">Home</a> | <a href="/about/">About</a> | <a href="/contact/">Contact</a></nav></header>
+  <main>
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+  </main>
+</body>
+</html>
