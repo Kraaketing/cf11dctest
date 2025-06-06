@@ -1,13 +1,13 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ "src/admin/index.html": "admin/index.html" });
-  eleventyConfig.addPassthroughCopy({ "src/admin/config.yml": "admin/config.yml" });
-  eleventyConfig.addPassthroughCopy({ "src/static/_redirects": "_redirects" });
-  eleventyConfig.addPassthroughCopy({ "src/static/_headers": "_headers" });
+  eleventyConfig.addPassthroughCopy({ "src/static/admin": "admin" });
+  eleventyConfig.addPassthroughCopy({ "src/static/config.yml": "config.yml" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/css": "assets/css" });
+
 
   return {
     dir: {
       input: "src",
-      includes: "_includes",
+      // includes: "_includes",
       output: "_site"
     },
     markdownTemplateEngine: "njk",
