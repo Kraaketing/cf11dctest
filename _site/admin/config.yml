@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: kraaketing/cf11dctest
   branch: main
 
 media_folder: "static/uploads"
