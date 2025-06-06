@@ -1,7 +1,5 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ "admin/index.html": "admin.html" });
-  eleventyConfig.addPassthroughCopy({ "admin/config.yml": "config.yml" });
-  eleventyConfig.addPassthroughCopy({ "src/assets/css": "assets/css" });
+  eleventyConfig.addPassthroughCopy({ "src/static/admin": "admin" });
   eleventyConfig.addPassthroughCopy({ "src/static/_headers": "_headers" });
 
 
