@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: kraaketing/cf11dctest
   branch: main
 
