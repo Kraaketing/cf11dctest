@@ -1,5 +1,5 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("static");
+eleventyConfig.addPassthroughCopy({ "src/static/admin": "admin" });
   eleventyConfig.addPassthroughCopy("admin");
 
   return {
