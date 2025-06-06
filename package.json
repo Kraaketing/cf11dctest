@@ -4,15 +4,14 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-"build:css": "sass src/assets/scss/main.scss src/assets/css/main.css",
-    "build": "npm run build:css && eleventy",
-    "start": "npm run build:css && eleventy --serve"
+    "build": "eleventy",
+    "start": "eleventy --serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^3.1.1",
-    "sass": "^1.89.1"
   }
 }
+
