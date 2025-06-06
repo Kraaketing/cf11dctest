@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
-eleventyConfig.addPassthroughCopy({ "src/admin": "admin" });
-eleventyConfig.addPassthroughCopy("src/_redirects");
-
+  eleventyConfig.addPassthroughCopy({ "src/admin": "admin" });
+  eleventyConfig.addPassthroughCopy({ "src/static/_redirects": "_redirects" });
+  eleventyConfig.addPassthroughCopy({ "src/static/_headers": "_headers" });
 
   return {
     dir: {
