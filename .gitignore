@@ -1,0 +1,19 @@
+# 11ty output
+_site/
+dist/
+.output/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+
+# CMS cache
+.cache/
