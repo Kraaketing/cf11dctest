@@ -1,11 +1,41 @@
-<!-- src/static/admin/index.html -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Content Manager</title>
     <meta charset="utf-8" />
+    <title>Content Manager</title>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </head>
   <body>
+    <script>
+      window.CMS_CONFIG = {
+        backend: {
+          name: "github",
+          repo: "kraaketing/cf11dctest",
+          branch: "main"
+        },
+        media_folder: "static/uploads",
+        public_folder: "/uploads",
+        collections: [
+          {
+            name: "pages",
+            label: "Pages",
+            folder: "src/pages",
+            create: true,
+            slug: "{{slug}}",
+            fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Body", name: "body", widget: "markdown" }
+            ]
+          }
+        ]
+      };
+      window.onload = function () {
+        if (document.body) {
+          window.DECAP_CMS.init(window.CMS_CONFIG);
+        } else {
+          console.error("No document.body available for Decap CMS to mount.");
+        }
+      };
+    </script>
   </body>
 </html>
